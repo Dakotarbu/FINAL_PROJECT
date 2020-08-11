@@ -6,10 +6,12 @@
 #### For this final project I chose to look at a FiveThirtyEight data set on police killings in 2015. 
 #### Here is a link to the original article from [FiveThirtyEight](https://fivethirtyeight.com/features/where-police-have-killed-americans-in-2015/).
 
+
 #### I chose this data set for two reasons:
-* Although the data set is slightly older knowing how to 
+1. Although the data set is slightly older knowing how to 
 ask questions around a topic as relevant as police shootings is important. 
-* FiveThirtyEight is a reliable source for data with lots of information. 
+2. FiveThirtyEight is a reliable source for data with lots of information. 
+
 
 #### The data set includes 468 recorded police killings in the United States from 2015. For each killing by police the CSV file gives information on: 
 * **The victim** of police violence _(age, race, gender, name)_
@@ -17,8 +19,34 @@ ask questions around a topic as relevant as police shootings is important.
 * **Demographics** where violence occured _(data on the census track/city where the killing occured)_
 
 As I first started looking at the data I had some initial questions: 
-* How many of these victims of police violence were even armed? 
-* Was police violence more prevelant in low income areas? 
+* What were the situations around these Americans being killed by the police? 
+* Where was with violence against citizens happening? 
+* Who was being affected by this? 
+
+I started my investiation of the data by first using Google sheet filters to get a feel for what the age range of victims was, what was the highest and lowest medium income where violence occured, and what states appear most on the list. 
+Just from my initial observations I noticed CA appear an impressive amount so I decided to start with this observation and make a pivot table. 
+
+I then made a pivot table where I created rows for: 
+1. **State**
+2. **Name** 
+
+
+Here is an image of my pivot table: 
+
+
+![Pivot Table 1]( /Users/dakotabrubaker/Desktop/Screen\ Shot\ 2020-08-11\ at\ 4.16.27\ PM.png )
+
+
+
+
+
+
+
+
+I then used a values filter using ```= COUNTA() ``` for each state to find out what percentage of the total each state made up. 
+
+The following is the graph I got from this process: 
+
 
 
 ## Percentage of Killings by State
@@ -28,7 +56,9 @@ This graph shows for each state what percentage of Americans killed by police oc
 ![Graph for State Percentage Shooting](https://docs.google.com/spreadsheets/d/e/2PACX-1vQw0hyjwUqtaHscofgS01TQXBX2abllsGuYY9bb-Dju2f1KHYEXRU_cXjuhTPh_IWsI7NRYz2tEzT5x/pubchart?oid=954737982&format=image)
 
 
+I saw from this graph that for the percentage for CA **(15.85%)** was actually the largest out of the entire US in 2015. From here I thought okay I can investigate one of my other questions about what is the socioeconomic situation around these killings in regards to CA. 
 
+So from here I made a new sheet titled 'CA Median Income'. 
 
 
 ## 2015 POLICE KILLINGS 
@@ -51,9 +81,9 @@ Pivot table
 
 
 
-'''
+```
 = SUM()
-'''
+```
 
 
 Creating a chart
