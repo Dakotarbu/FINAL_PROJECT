@@ -1,12 +1,12 @@
 # Final project for Dakota Brubaker.
 
-### For this final project I chose to look at a FiveThirtyEight data set on police killings in 2015. Here is a link to the original article from FiveThirtyEight. [link](https://fivethirtyeight.com/features/where-police-have-killed-americans-in-2015/)
+### For this final project I chose to look at a FiveThirtyEight data set on police killings in 2015. Here is a link to the original article from FiveThirtyEight. [FiveThirtyEight](https://fivethirtyeight.com/features/where-police-have-killed-americans-in-2015/)
 
 ### I chose this data set for two reasons:
 * Although the data set is slightly older knowing how to ask questions around a topic as relevant as police shootings is important. 
 * FiveThirtyEight is a reliable source for data with lots of information. 
 
-####The data set includes 468 recorded police killings in the United States from 2015. For each killing by police the CSV file gives information on: 
+#### The data set includes 468 recorded police killings in the United States from 2015. For each killing by police the CSV file gives information on: 
 * The victim of police violence (age, race, gender, name)
 * Location (Long, Lat, City, State)
 * Demographics where violence occured (data on the census track/city where the killing occured)
