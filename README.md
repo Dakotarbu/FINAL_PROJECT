@@ -15,6 +15,9 @@ Here is the first graph:
 
 I used this method 
 
+![Map of shooting with weapon](//www.datawrapper.de/_/ewVqG/)
+
+
 ```
 ```
 
