@@ -1,11 +1,23 @@
 # Final project for Dakota Brubaker.
 
-Here is some text and I want to make a [link](https://fivethirtyeight.com/features/where-police-have-killed-americans-in-2015/)
+### For this final project I chose to look at a FiveThirtyEight data set on police killings in 2015. Here is a link to the original article from FiveThirtyEight. [link](https://fivethirtyeight.com/features/where-police-have-killed-americans-in-2015/)
 
-Here is a list of stuff I'll go over:
-* one 
-* two 
-* three
+### I chose this data set for two reasons:
+* Although the data set is slightly older knowing how to ask questions around a topic as relevant as police shootings is important. 
+* FiveThirtyEight is a reliable source for data with lots of information. 
+
+####The data set includes 468 recorded police killings in the United States from 2015. For each killing by police the CSV file gives information on: 
+* The victim of police violence (age, race, gender, name)
+* Location (Long, Lat, City, State)
+* Demographics where violence occured (data on the census track/city where the killing occured)
+
+As I first started looking at the data I had some initial questions: 
+* How many of these victims of police violence were even armed? 
+* Was police violence more prevelant in low income areas? 
+
+
+
+
 
 ![Graph for State Percentage Shooting](https://docs.google.com/spreadsheets/d/e/2PACX-1vQw0hyjwUqtaHscofgS01TQXBX2abllsGuYY9bb-Dju2f1KHYEXRU_cXjuhTPh_IWsI7NRYz2tEzT5x/pubchart?oid=954737982&format=image)
 
