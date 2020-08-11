@@ -7,7 +7,7 @@ Here is a list of stuff I'll go over:
 * two 
 * three
 
-![Graph for State Percentage Shooting](/Users/dakotabrubaker/Desktop/PercentofTotalPoliceKillings\ .png)
+![Graph for State Percentage Shooting](/Users/dakotabrubaker/Desktop/PercentofTotalPoliceKillings.png)
 
 Here is Intro text 
 
