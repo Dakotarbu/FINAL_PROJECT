@@ -34,16 +34,40 @@ This graph shows for each state what percentage of Americans killed by police oc
 ## 2015 POLICE KILLINGS 
 
 
+First was curious about what states experienced the worst percentage of killings. 
+
+
+Ended up being CA. 
+
+
 <iframe title="Police Killings (2015)" aria-label="map" id="datawrapper-chart-ewVqG" src="https://datawrapper.dwcdn.net/ewVqG/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="677"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
 
 
+## DEATHS BY AGE 
 
+
+Pivot table 
+
+
+
+'''
+= SUM()
+'''
+
+
+Creating a chart
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQw0hyjwUqtaHscofgS01TQXBX2abllsGuYY9bb-Dju2f1KHYEXRU_cXjuhTPh_IWsI7NRYz2tEzT5x/pubchart?oid=1943199288&amp;format=image"></iframe>
 
 
 
 
 ## CA COUNTIES BY MEDIAN INCOME 
+
+Decided to further investigate by creating a new sheet that tracked CA counties where killings occured to that counties Median income. FiveThirtyEight article had mentioned that there was a relationship between poorer census tracks and deaths. So I started by creating this map on [DataWrapper](https://www.datawrapper.de/). 
+
+
 
 
 <iframe title="CA COUNTIES" aria-label="map" id="datawrapper-chart-WsyMe" src="https://datawrapper.dwcdn.net/WsyMe/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="748"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
