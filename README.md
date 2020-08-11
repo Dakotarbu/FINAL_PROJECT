@@ -34,7 +34,7 @@ I then made a pivot table where I created rows for:
 Here is an image of my pivot table: 
 
 
-![Pivot Table 1]( /Users/dakotabrubaker/Desktop/Screen\ Shot\ 2020-08-11\ at\ 4.16.27\ PM.png )
+![Pivot Table 1](PIVOT_TABLE_1.png)
 
 
 
