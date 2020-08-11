@@ -21,20 +21,24 @@ As I first started looking at the data I had some initial questions:
 * Was police violence more prevelant in low income areas? 
 
 
+## Percentage of Killings by State
+This graph shows for each state what percentage of Americans killed by police occured in that state.
+
 
 ![Graph for State Percentage Shooting](https://docs.google.com/spreadsheets/d/e/2PACX-1vQw0hyjwUqtaHscofgS01TQXBX2abllsGuYY9bb-Dju2f1KHYEXRU_cXjuhTPh_IWsI7NRYz2tEzT5x/pubchart?oid=954737982&format=image)
 
-Here is Intro text 
 
-Here is the first graph:
-
-I used this method 
 
 
 
 
 <iframe title="Police Killings (2015)" aria-label="map" id="datawrapper-chart-ewVqG" src="https://datawrapper.dwcdn.net/ewVqG/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="677"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
+
+
+
+
+
 
 
 
