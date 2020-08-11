@@ -1,4 +1,4 @@
-# Final project for Dakota Brubaker.
+# FINAL PROJECT (DAKOTA BRUBAKER).
 
 
 
@@ -12,9 +12,9 @@ ask questions around a topic as relevant as police shootings is important.
 * FiveThirtyEight is a reliable source for data with lots of information. 
 
 #### The data set includes 468 recorded police killings in the United States from 2015. For each killing by police the CSV file gives information on: 
-* **The victim** of police violence (age, race, gender, name)
-* **Location** (Long, Lat, City, State)
-* **Demographics** where violence occured (data on the census track/city where the killing occured)
+* **The victim** of police violence _(age, race, gender, name)_
+* **Location** _(Long, Lat, City, State)_
+* **Demographics** where violence occured _(data on the census track/city where the killing occured)_
 
 As I first started looking at the data I had some initial questions: 
 * How many of these victims of police violence were even armed? 
