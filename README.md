@@ -24,7 +24,28 @@ As I first started looking at the data I had some initial questions:
 * Who was being affected by this? 
 
 I started my investiation of the data by first using Google sheet filters to get a feel for what the age range of victims was, what was the highest and lowest medium income where violence occured, and what states appear most on the list. 
-Just from my initial observations I noticed CA appear an impressive amount so I decided to start with this observation and make a pivot table. 
+Just from my initial observations I noticed a few things:
+1. That there seemed to be more 20 year olds than other ages 
+2. CA appeared an impressive amount 
+
+so I decided to start with this observation and make a pivot table for both. 
+
+## DEATHS BY AGE 
+
+
+
+Pivot table 
+
+
+
+```
+= SUM()
+```
+
+
+Creating a chart
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQw0hyjwUqtaHscofgS01TQXBX2abllsGuYY9bb-Dju2f1KHYEXRU_cXjuhTPh_IWsI7NRYz2tEzT5x/pubchart?oid=1943199288&amp;format=image"></iframe>
 
 I then made a pivot table where I created rows for: 
 1. **State**
@@ -60,14 +81,58 @@ I saw from this graph that for the percentage for CA **(15.85%)** was actually t
 
 So from here I made a new sheet titled 'CA Median Income'. 
 
+I ran into a notable probelm here though. To map by CA county I needed to use the counties code. Counties are given a FIPS code, for example a CA code may be 06001 (Alameda county). 
+
+The problem I ran into is that the FiveThirtyEight data included CA with a missing digit (the zero in the first index), so the FIPS codes were 6001 for Alameda for example. This ended up being true for any FIPS code that began with a zero (states starting with A-C).
+This happened because the data type for this column was numbers but numbers can't start with zero in google sheets so I changed the data type to plain text, which allowed me to add my zeros. 
+
+I then using filters added all the states that had an incorrect FIPS code and fixed the problem. 
+
+
+This allowed me to make the following maps: 
+
+
+
+## CA COUNTIES BY MEDIAN INCOME 
+
+Once I had the correct FIPS codes for CA I decided to further investigate by showing counties Median income where a killing occured. The FiveThirtyEight article had mentioned that there was a relationship between more impoverished census tracks and deaths so I figured I'd start with CA and see how this claim stood up to my knowledge of CA and the median income for these counties. 
+
+
+I started this by creating this map on [DataWrapper](https://www.datawrapper.de/). 
+
+
+
+
+<iframe title="CA COUNTIES" aria-label="map" id="datawrapper-chart-WsyMe" src="https://datawrapper.dwcdn.net/WsyMe/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="748"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+</script>
+
+
+The map showed a clear lean towards killings happening in counties with a lower median income. The counties with higher income medians also pose the interesting question of is the median income actually a good indicaiton, for example LA county has a median income of roughly $68,000 but I imagine for many there income is much lower than $68,0000. 
+
+
+After seeing the CA map I figured well this gives a pretty good visual aide for the idea that the state with the most police killings has these killings mostly occur within lower income counties so I decided to do the same for the entire country. 
+
+## US COUNTIES BY MEDIAN INCOME
+
+
+When I created this graph through datawrapper I decided to remove county and state boundries (leaving only counties where a citizen was killed by the police). I used median incomes by county again to try and showcase that across the country it is clear that many of these counties have a median income of near $40k. 
+
+
+<iframe title="US COUNTIES WITH MEDIAN INCOME" aria-label="map" id="datawrapper-chart-PlgdB" src="https://datawrapper.dwcdn.net/PlgdB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="564"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+</script>
+
+
+After seeing this data I felt confident that if I were writing a story highlighting the counties where police killed people I would have the resources to show what demographic traits of these areas look like. 
+
+
+After creating this map I decided well now I have a visualization of the counties but I should also create the option to show where exactly the killing happened, because a whole county being highlighted through a chloropleth map may be misleading about how widespread the deaths were. 
+
+But I actually found the following map to drive home in some ways even better the idea that this is a serious issue within what we have normalized as 'policing'. 
+
+For this map I used the longitude and latitude of each killing and used a pinpoint to show where the killing was and also a brief piece of information (through colorcoding) about if the American who was killed had a weapon on them or not. I chose to include this because you can see that a large portion of people who were killed had no form of weapon on them at all. 
+
 
 ## 2015 POLICE KILLINGS 
-
-
-First was curious about what states experienced the worst percentage of killings. 
-
-
-Ended up being CA. 
 
 
 <iframe title="Police Killings (2015)" aria-label="map" id="datawrapper-chart-ewVqG" src="https://datawrapper.dwcdn.net/ewVqG/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="677"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
@@ -93,19 +158,3 @@ Creating a chart
 
 
 
-## CA COUNTIES BY MEDIAN INCOME 
-
-Decided to further investigate by creating a new sheet that tracked CA counties where killings occured to that counties Median income. FiveThirtyEight article had mentioned that there was a relationship between poorer census tracks and deaths. So I started by creating this map on [DataWrapper](https://www.datawrapper.de/). 
-
-
-
-
-<iframe title="CA COUNTIES" aria-label="map" id="datawrapper-chart-WsyMe" src="https://datawrapper.dwcdn.net/WsyMe/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="748"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-</script>
-
-
-## US COUNTIES BY MEDIAN INCOME
-
-
-<iframe title="US COUNTIES WITH MEDIAN INCOME" aria-label="map" id="datawrapper-chart-PlgdB" src="https://datawrapper.dwcdn.net/PlgdB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="564"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-</script>
