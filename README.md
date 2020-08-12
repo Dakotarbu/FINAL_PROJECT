@@ -25,6 +25,8 @@ As I first started looking at the data I had some initial questions:
 
 I started my investiation of the data by first using Google sheet filters to get a feel for what the age range of victims was, what was the highest and lowest medium income where violence occured, and what states appear most on the list. 
 Just from my initial observations I noticed a few things:
+
+
 1. That there seemed to be more 20 year olds than other ages 
 2. CA appeared an impressive amount 
 
@@ -33,21 +35,23 @@ so I decided to start with this observation and make a pivot table for both.
 ## DEATHS BY AGE 
 
 
-
-Pivot table 
-
+The initial pivot table I created was for age of those killed. Here is the table: 
 
 
-```
-= SUM()
-```
+![pivot table II](pivot_table_II.png)
 
 
-Creating a chart
+I then used a simple google sheet formula, ``` = SUM() ```, to group together the totals for teens, twenties, and on to a seventy + grouping. 
+
+
+I then created a chart to really visualize what I had collected from the data. 
 
 <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQw0hyjwUqtaHscofgS01TQXBX2abllsGuYY9bb-Dju2f1KHYEXRU_cXjuhTPh_IWsI7NRYz2tEzT5x/pubchart?oid=1943199288&amp;format=image"></iframe>
 
-I then made a pivot table where I created rows for: 
+
+After seeing the graph I decided well it is interesting but not the best question I could ask for sure. So I investigated my other initial observation. 
+
+I started by investigating the total percentage of killings by state by making a pivot table where I created rows for: 
 1. **State**
 2. **Name** 
 
@@ -58,16 +62,9 @@ Here is an image of my pivot table:
 ![Pivot Table 1](PIVOT_TABLE_1.png)
 
 
-
-
-
-
-
-
 I then used a values filter using ```= COUNTA() ``` for each state to find out what percentage of the total each state made up. 
 
 The following is the graph I got from this process: 
-
 
 
 ## Percentage of Killings by State
@@ -137,24 +134,3 @@ For this map I used the longitude and latitude of each killing and used a pinpoi
 
 <iframe title="Police Killings (2015)" aria-label="map" id="datawrapper-chart-ewVqG" src="https://datawrapper.dwcdn.net/ewVqG/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="677"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
-
-
-## DEATHS BY AGE 
-
-
-Pivot table 
-
-
-
-```
-= SUM()
-```
-
-
-Creating a chart
-
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQw0hyjwUqtaHscofgS01TQXBX2abllsGuYY9bb-Dju2f1KHYEXRU_cXjuhTPh_IWsI7NRYz2tEzT5x/pubchart?oid=1943199288&amp;format=image"></iframe>
-
-
-
-
