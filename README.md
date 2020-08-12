@@ -138,7 +138,10 @@ For this map I used the longitude and latitude of each killing and used a pinpoi
 
 ## CONCLUSIONS 
 
+
 From working with the data some of my take aways are that: 
+
+
 1. It's clear and not hard to find a correlation between low income counties adn geographic regions and more cases of police killings. 
 2. I feel that many would assume that the worst states for police killing would be states with strong political and culture support for policing and a more militaristic police force but in fact liberal states tended to rank high on the list of killings. Now this isn't any type of conclusions but definetely could leaad to more questions and analyzation of budgeting and political contributions in liberal areas. 
 3. Often victims of police killings were not armed in anyway and making this clear to the public is very maneagable with a data set like this. 
