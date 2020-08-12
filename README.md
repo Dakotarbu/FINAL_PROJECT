@@ -38,7 +38,7 @@ so I decided to start with this observation and make a pivot table for both.
 The initial pivot table I created was for age of those killed. Here is the table: 
 
 
-![pivot table II](pivot_table_II.png)
+![pivot table II](Pivot_table_II.png)
 
 
 I then used a simple google sheet formula, ``` = SUM() ```, to group together the totals for teens, twenties, and on to a seventy + grouping. 
@@ -134,3 +134,11 @@ For this map I used the longitude and latitude of each killing and used a pinpoi
 
 <iframe title="Police Killings (2015)" aria-label="map" id="datawrapper-chart-ewVqG" src="https://datawrapper.dwcdn.net/ewVqG/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="677"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
 </script>
+
+
+## CONCLUSIONS 
+
+From working with the data some of my take aways are that: 
+1. It's clear and not hard to find a correlation between low income counties adn geographic regions and more cases of police killings. 
+2. I feel that many would assume that the worst states for police killing would be states with strong political and culture support for policing and a more militaristic police force but in fact liberal states tended to rank high on the list of killings. Now this isn't any type of conclusions but definetely could leaad to more questions and analyzation of budgeting and political contributions in liberal areas. 
+3. Often victims of police killings were not armed in anyway and making this clear to the public is very maneagable with a data set like this. 
